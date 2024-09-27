@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  }
+{
   "name": "shopping",
   "version": "0.1.0",
   "private": true,
