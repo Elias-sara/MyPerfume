@@ -1,0 +1,50 @@
+.cart {
+    background-color: #fff;              /* White background for cart */
+    border: 1px solid #ddd;              /* Light gray border */
+    border-radius: 8px;                  /* Rounded corners */
+    padding: 10px;                       /* Reduced padding for compactness */
+    margin: 20px auto;                   /* Center the cart with auto margin */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 250px;                    /* Set a maximum width */
+}
+
+.cart h2 {
+    margin-bottom: 10px;                 /* Reduced space below the heading */
+}
+
+.cart p {
+    margin: 3px 0;                       /* Less space between item lines */
+}
+
+.cart button {
+    background-color: var(--primary-color); /* Using defined primary color */
+    color: white;                        /* White text */
+    padding: 8px;                       /* Reduced padding for buttons */
+    border: none;                       /* Remove border */
+    border-radius: 5px;                 /* Rounded corners for button */
+    cursor: pointer;                    /* Pointer cursor on hover */
+    margin-top: 10px;                   /* Margin above button */
+    transition: background-color 0.3s;  /* Transition for background color */
+}
+
+.cart button:hover {
+    background-color: var(--hover-color); /* Change color on hover */
+}
+.cart {
+    background-color: var(--cart-bg);
+    padding: 20px;
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Make the cart sticky */
+    top: 20px; /* Adjust the top offset as needed */
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.cart h2 {
+    margin: 0 0 10px;
+}
+
+.cart button {
+    margin-top: 10px; /* Add spacing above the button */
+}

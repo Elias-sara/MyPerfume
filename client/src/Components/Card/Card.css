@@ -1,0 +1,83 @@
+.card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 150px; /* Slightly wider for better layout */
+    position: relative; /* To position badge */
+}
+.cards__container {
+    display: flex;                     /* Use flexbox for layout */
+    flex-wrap: wrap;                  /* Allow cards to wrap to the next line */
+    justify-content: center;           /* Center cards horizontally */
+    margin: 20px;                     /* Margin around the container */
+    gap: 20px;                        /* Space between cards for better spacing */
+}
+
+.card {
+    flex: 1 1 150px;                 /* Flex-grow, flex-shrink, and flex-basis for responsiveness */
+    max-width: 200px;                /* Max width to limit the card size */
+    box-sizing: border-box;          /* Include padding and border in the element's total width and height */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Badge Styles */
+.card__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(227, 112, 30);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgb(227, 112, 30);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card__badge--hidden {
+    display: none;
+}
+
+.card img {
+    max-width: 100%; /* Ensures the image scales responsively */
+    height: auto;    /* Maintains the aspect ratio */
+    width: 150px;    /* Set a fixed width for smaller size */
+    margin-bottom: 10px; /* Adds space below the image */
+}
+
+/* Button container to align buttons horizontally */
+.btn-container {
+    display: flex;              /* Use Flexbox to align items */
+    justify-content: space-between; /* Space items evenly */
+    margin-top: 10px;         /* Adds space above the button container */
+}
+
+.btn {
+    flex: 1;                  /* Makes buttons take equal space */
+    margin: 0 5px;           /* Adds space between buttons */
+}

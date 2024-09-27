@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #e0c521; /* Main theme color */
+    --secondary-color: #fff; /* Background color for elements */
+    --hover-color: #cab320; /* Hover color for buttons */
+    --active-color: #ad9a1c; /* Active color for buttons */
+    --card-border: #ddd; /* Card border color */
+    --cart-bg: #f8f8f8; /* Cart background color */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cart-bg);
+}
+
+h1, h2, h3, h4 {
+    color: #333; /* Heading color */
+}
+
+p {
+    color: #555; /* Text color */
+}
+
+/* General styles for buttons and cards can go here if not specific */
+
+.card {
+    background-color: var(--secondary-color); /* Use secondary color from root */
+    border: 2px solid var(--card-border);     /* Use card border variable */
+    border-radius: 10px;                      /* Slightly more rounded corners */
+    padding: 15px;                            /* More padding for a spacious look */
+    margin: 10px;                             /* Margin between cards */
+    text-align: center;                       /* Center text inside cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    width: 160px;                            /* Fixed width for cards */
+    position: relative;                       /* For badge positioning */
+}
+
+.card:hover {
+    transform: translateY(-5px);             /* Slightly lift card on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;                        /* Slightly reduced heading size */
+    color: #333;                              /* Consistent heading color */
+}
+
+.card p {
+    font-size: 1.1rem;                        /* Slightly reduced paragraph size */
+    color: #555;                              /* Consistent text color */
+}
+
+.card img {
+    max-width: 100%;                          /* Responsive image */
+    height: auto;                             /* Maintain aspect ratio */
+    width: 140px;                             /* Fixed width for images */
+    margin-bottom: 10px;                      /* Space below image */
+}
+.container {
+    display: flex;                          /* Use flexbox for layout */
+    justify-content: space-between;        /* Space between items */
+    align-items: flex-start;               /* Align items to the top */
+    margin: 20px;                          /* Margin around the container */
+}
+.btn {
+    padding: 8px 12px; /* Reduced padding for a smaller look */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly less rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.btn.add {
+    background-color: var(--primary-color); /* Main theme color */
+    color: white; /* Text color */
+}
+
+.btn.remove {
+    background-color: tomato; /* Remove button color */
+    color: white; /* Text color */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.btn:active {
+    transform: scale(0.95); /* Scale effect on click */
+}
+
+/* Optional: Style for button container to add spacing */
+.btn-container {
+    display: flex; /* Flexbox for layout */
+    gap: 8px; /* Smaller gap between buttons */
+}
